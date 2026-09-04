@@ -17,3 +17,11 @@ fontInputs.forEach(function (input) {
       document.documentElement.setAttribute("data-fontsize", input.value);
    });
 });
+
+var widthInputs = document.querySelectorAll('input[name="width"]');
+
+widthInputs.forEach(function (input){
+  input.addEventListener("change", function (){
+    document.documentElement.setAttribute("data-width", input.value);
+  });
+});
