@@ -8,20 +8,19 @@ var fontInputs = document.querySelectorAll('input[name="fontsize"]');
 var widthInputs = document.querySelectorAll('input[name="width"]');
 
 themeInputs.forEach(function (input) {
-   input.addEventListener("change", function () {
-      // html 태그의 data-theme 값을 선택한 테마로 변경
-      document.documentElement.setAttribute("data-theme", input.value);
-   });
+  input.addEventListener("change", function () {
+    document.documentElement.setAttribute("data-theme", input.value);
+  });
 });
 
 fontInputs.forEach(function (input) {
-   input.addEventListener("change", function () {
-      document.documentElement.setAttribute("data-fontsize", input.value);
-   });
+  input.addEventListener("change", function () {
+    document.documentElement.setAttribute("data-fontsize", input.value);
+  });
 });
 
-widthInputs.forEach(function (input){
-  input.addEventListener("change", function (){
+widthInputs.forEach(function (input) {
+  input.addEventListener("change", function () {
     document.documentElement.setAttribute("data-width", input.value);
   });
 });
