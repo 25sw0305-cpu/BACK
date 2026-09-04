@@ -1,0 +1,168 @@
+/* =========================================================
+   친구들의 웹사이트 메뉴 - submenu.css
+   ========================================================= */
+
+.submenu-page {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.8125rem;
+}
+
+.submenu-hero {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
+  color: var(--link);
+}
+
+.submenu-hero h1 {
+  margin: 0 0 0.8rem;
+
+  font-family: serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+.submenu-hero p {
+  margin: 0;
+  color: var(--sub-text);
+  line-height: 1.8;
+}
+
+.website-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.website-card {
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.25rem;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  background: var(--box-bg);
+  color: var(--text);
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.website-card:visited {
+  color: var(--text);
+}
+
+.website-card:hover {
+  text-decoration: none;
+  transform: translateY(-4px);
+  border-color: var(--link);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.website-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-number {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--sub-text);
+}
+
+.external-icon {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  font-size: 1rem;
+}
+
+.website-avatar {
+  width: 58px;
+  height: 58px;
+
+  margin: 1.5rem 0 1rem;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  background: var(--bg);
+}
+
+.website-info h2 {
+  margin: 0 0 0.25rem;
+
+  font-family: serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+
+.website-info p {
+  margin: 0;
+  color: var(--sub-text);
+  font-size: 0.82rem;
+}
+
+.website-url {
+  margin-top: auto;
+  padding-top: 1.4rem;
+
+  color: var(--link);
+
+  font-size: 0.76rem;
+  overflow-wrap: anywhere;
+}
+
+.submenu-note {
+  margin: 1.5rem 0 0;
+  color: var(--sub-text);
+  font-size: 0.76rem;
+}
+
+@media (max-width: 700px) {
+  .submenu-page {
+    padding-top: 1.25rem;
+  }
+
+  .website-list {
+    grid-template-columns: 1fr;
+  }
+}
