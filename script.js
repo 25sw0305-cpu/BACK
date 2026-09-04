@@ -7,6 +7,8 @@
 var myName = "김시온";
 var myAge = 18;
 
+var themeInputs = document.querySelectorAll('input[name="theme"]');
+
 var fontInputs = document.querySelectorAll('input[name="fontsize"]');
 
 fontInputs.forEach(function (input) {
