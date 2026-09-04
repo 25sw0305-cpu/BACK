@@ -5,6 +5,8 @@ var themeInputs = document.querySelectorAll('input[name="theme"]');
 
 var fontInputs = document.querySelectorAll('input[name="fontsize"]');
 
+var widthInputs = document.querySelectorAll('input[name="width"]');
+
 themeInputs.forEach(function (input) {
    input.addEventListener("change", function () {
       // html 태그의 data-theme 값을 다크(dark) 모드로 바꿔라!
@@ -17,8 +19,6 @@ fontInputs.forEach(function (input) {
       document.documentElement.setAttribute("data-fontsize", input.value);
    });
 });
-
-var widthInputs = document.querySelectorAll('input[name="width"]');
 
 widthInputs.forEach(function (input){
   input.addEventListener("change", function (){
