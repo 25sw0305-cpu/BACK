@@ -19,6 +19,9 @@
   --box-head: #cddbf0;
 
   --font-scale: 1;
+
+  /* 화면 최대 너비 */
+  --content-max: 1200px;
 }
 
 
@@ -30,6 +33,13 @@ html[data-fontsize="small"] {
 
 html[data-fontsize="large"] {
   --font-scale: 1.25;
+}
+
+
+/* ---------- 화면 너비 설정 ---------- */
+
+html[data-width="wide"] {
+  --content-max: 100%;
 }
 
 
@@ -143,7 +153,7 @@ input:focus-visible {
    ========================================================= */
 
 .wrap {
-  max-width: 1200px;
+  max-width: var(--content-max);
 
   margin: 0 auto;
   padding: 1.5rem;
