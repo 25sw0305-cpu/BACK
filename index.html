@@ -2,125 +2,126 @@
 <html lang="ko" data-fontsize="standard">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>김시온 - 우리반 백과</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김시온 - 우리반 백과</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="logo">우</div>
-    <div class="sitename">
-      <strong>우리반 백과</strong>
-      <span>우리 반 모두의 백과사전</span>
+    <header class="topbar">
+        <div class="logo">우</div>
+        <div class="sitename">
+            <strong>우리반 백과</strong>
+            <span>우리 반 모두의 백과사전</span>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <nav class="toc">
+            <h2>목차</h2>
+            <ul>
+                <li><a href="#first">처음 위치</a></li>
+                <li><a href="#second">학교 생활</a></li>
+                <li><a href="#three">관심 분야</a></li>
+                <li><a href="#four">활동과 수상</a></li>
+                <li><a href="#five">앞으로의 계획</a></li>
+                <li><a href="#six">외부 링크</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1 id="first">김시온</h1>
+            <p class="subtitle">우리반 백과, 우리 반 모두의 백과사전.</p>
+
+            <aside class="infobox">
+                <div class="infobox-title">김시온</div>
+                <img src="kso.png" alt="김시온의 사진">
+                <table>
+                    <caption>기본 정보</caption>
+                    <tbody>
+                        <!-- (4) 표의 내용을 자신의 것으로 바꾸세요. 줄을 더 넣어도 됩니다 -->
+                        <tr>
+                            <th>출생</th>
+                            <td>2009년 5월 7일</td>
+                        </tr>
+                        <tr>
+                            <th>학교</th>
+                            <td>서울 금융고등학교</td>
+                        </tr>
+                        <tr>
+                            <th>학과</th>
+                            <td>소프트웨어과</td>
+                        </tr>
+                        <tr>
+                            <th>관심 분야</th>
+                            <td>서버 네트워크 관리</td>
+                        </tr>
+                        <tr>
+                            <th>좌우명</th>
+                            <td>잠만보</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+
+            <!-- (5) 첫 문단: 나를 한두 문장으로 소개 -->
+            <p><strong>김시온</strong>은 서울 금융고등학교 소프트웨어과 학생이다.</p>
+
+            <section>
+                <h2 id="second">학교 생활</h2>
+                <p>서울 금융고등학교 1학년 1학기에 학급회장을 하였으며<br>학과내 방과후 및 활동에 성실히 참여하였습니다.<br>1학년때 학교내 대회인 해커톤, 정보 능력 겨루기,<br> 정보
+                    골든벨 대회 및 외부 타 대회에서 활동을 하였다.</p>
+            </section>
+
+            <section>
+                <h2 id="three">관심 분야</h2>
+                <ul>
+                    <li>서버 네트워크 관리 및 리눅스</li>
+                    <li>스포츠</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="four">활동과 수상</h2>
+                <ul>
+                    <li><strong>환경단체재단 그룹 </strong>4등</li>
+                    <li><strong>나우 그룹 </strong>2등</li>
+                    <li><strong>코스콤 </strong>활동</li>
+                    <li><strong>해커톤 그룹 </strong>1등</li>
+                    <li><strong>정보 능력 겨루기 </strong>1등</li>
+                    <li><strong>정보 골든벨 </strong>3등</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="five">앞으로의 계획</h2>
+                <p>여기에 내용을 적으세요.</p>
+            </section>
+
+            <section>
+                <h2 id="six">외부 링크</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/ko/">MDN 웹 문서</a></li>
+                </ul>
+                <p class="footnote">이 문서는 수업 실습용으로 작성한 문서입니다.</p>
+            </section>
+        </main>
+
+        <aside class="appearance">
+            <h2>외관</h2>
+
+            <fieldset class="panel-group">
+                <legend>글</legend>
+                <label><input type="radio" name="fontsize" value="small"> 작음</label>
+                <label><input type="radio" name="fontsize" value="standard" checked> 표준</label>
+                <label><input type="radio" name="fontsize" value="large"> 큼</label>
+            </fieldset>
+        </aside>
+
     </div>
-  </header>
 
-  <div class="wrap">
-    <nav class="toc">
-      <h2>목차</h2>
-      <ul>
-        <li><a href="#first">처음 위치</a></li>
-        <li><a href="#second">학교 생활</a></li>
-        <li><a href="#three">관심 분야</a></li>
-        <li><a href="#four">활동과 수상</a></li>
-        <li><a href="#five">앞으로의 계획</a></li>
-        <li><a href="#six">외부 링크</a></li>
-      </ul>
-    </nav>
-
-    <main class="content">
-      <h1 id="first">김시온</h1>
-      <p class="subtitle">우리반 백과, 우리 반 모두의 백과사전.</p>
-
-      <aside class="infobox">
-        <div class="infobox-title">김시온</div>
-        <img src="kso.png" alt="김시온의 사진">
-        <table>
-          <caption>기본 정보</caption>
-          <tbody>
-            <!-- (4) 표의 내용을 자신의 것으로 바꾸세요. 줄을 더 넣어도 됩니다 -->
-            <tr>
-              <th>출생</th>
-              <td>2009년 5월 7일</td>
-            </tr>
-            <tr>
-              <th>학교</th>
-              <td>서울 금융고등학교</td>
-            </tr>
-            <tr>
-              <th>학과</th>
-              <td>소프트웨어과</td>
-            </tr>
-            <tr>
-              <th>관심 분야</th>
-              <td>서버 네트워크 관리</td>
-            </tr>
-            <tr>
-              <th>좌우명</th>
-              <td>잠만보</td>
-            </tr>
-          </tbody>
-        </table>
-      </aside>
-
-      <!-- (5) 첫 문단: 나를 한두 문장으로 소개 -->
-      <p><strong>김시온</strong>은 서울 금융고등학교 소프트웨어과 학생이다.</p>
-
-      <section>
-        <h2 id="second">학교 생활</h2>
-        <p>서울 금융고등학교 1학년 1학기에 학급회장을 하였으며<br>학과내 방과후 및 활동에 성실히 참여하였습니다.<br>1학년때 학교내 대회인 해커톤, 정보 능력 겨루기,<br> 정보 골든벨 대회 및 외부 타 대회에서 활동을 하였다.</p>
-      </section>
-
-      <section>
-        <h2 id="three">관심 분야</h2>
-        <ul>
-          <li>서버 네트워크 관리 및 리눅스</li>
-          <li>스포츠</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 id="four">활동과 수상</h2>
-        <ul>
-          <li><strong>환경단체재단 그룹 </strong>4등</li>
-          <li><strong>나우 그룹 </strong>2등</li>
-          <li><strong>코스콤 </strong>활동</li>
-          <li><strong>해커톤 그룹 </strong>1등</li>
-          <li><strong>정보 능력 겨루기 </strong>1등</li>
-          <li><strong>정보 골든벨 </strong>3등</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 id="five">앞으로의 계획</h2>
-        <p>여기에 내용을 적으세요.</p>
-      </section>
-
-      <section>
-        <h2 id="six">외부 링크</h2>
-        <ul>
-          <li><a href="https://developer.mozilla.org/ko/">MDN 웹 문서</a></li>
-        </ul>
-        <p class="footnote">이 문서는 수업 실습용으로 작성한 문서입니다.</p>
-      </section>
-    </main>
-
-    <aside class="appearance">
-      <h2>외관</h2>
-
-      <fieldset class="panel-group">
-        <legend>글</legend>
-        <label><input type="radio" name="fontsize" value="small">작음</label>
-        <label><input type="radio" name="fontsize" value="standard">표준</label>
-        <label><input type="radio" name="fontsize" value="large">큼</label>
-      </fieldset>
-    </aside>
-
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
